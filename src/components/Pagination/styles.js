@@ -1,15 +1,16 @@
 import { makeStyles } from "@mui/styles";
 
-export default makeStyles(()=> ({
-    root: {
-        display: 'flex',
-        height: '100%'
+export default makeStyles((theme)=> ({
+    container: {
+         display: 'flex',
+         justifyContent: 'center',
+         alignItems: 'center',
     },
-    toolbar: {
-        height: '70px'
+    button: {
+        margin: '30px 2px'
     },
-    content: {
-        flexGrow: 1,
-        padding: '2em' 
+    pageNumber: {
+        margin: '0 20px !important',
+        color: theme.palette.text.primary,
     }
 }))
